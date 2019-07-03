@@ -75,7 +75,7 @@ article>p
     margin-bottom: 70px;
 }
 
-.container
+.container-text--image-right
 {
   display: flex;
   flex-direction: row;
@@ -98,13 +98,13 @@ aside>p
   text-align: center;
 }
 
-.inflation
+.container-text__image
 {
   margin-right: 30px;
   margin-top: 200px;
 }
 
-.story_universe
+.container-text--full
 {
 margin-top: 350px;
 font-size: 19px;
@@ -116,7 +116,7 @@ font-size: 19px;
   width: 50%;
 }
 
-.universe
+.container-image--text
 {
   width: 100%;
   text-align: center;
@@ -141,4 +141,120 @@ footer
   height: 50px;
   border-radius: 11px;
   margin: 15px;
+}
+
+footer>p
+{
+  color: white;
+  font-size: 12px;
+}
+
+a:hover
+{
+  color: red;
+}
+
+@media screen and (max-width:699px)
+{
+
+  h1
+  {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  
+
+  nav
+{
+  margin: 0 auto;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+section
+{
+  margin: 10px;
+  height: auto;
+}
+
+h2
+{
+  font-size: 1.3em;
+}
+
+.container-text--image-right
+{
+  font-size: 16px;
+  display: block;
+}
+
+article
+{
+  padding-left: 1px;
+  padding-right: 1px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: 3px;
+  text-align: justify;
+  color: white;
+}
+
+article>h2
+{
+  margin-bottom: 0px;
+  height: 55px;
+}
+
+aside
+{
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: block; 
+  text-align: center;
+}
+
+.container-text__image
+{
+  height: 200px;
+  width: 250px;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.container-text--full
+{
+  margin-top: 1120px;
+  font-size: 1em;
+}
+
+.story
+{
+  height: 250px;
+  width: 270px;
+}
+
+footer
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>p
+{
+  margin:0;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.logo
+{
+  margin-bottom: 0;
 }

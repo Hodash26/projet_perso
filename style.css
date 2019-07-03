@@ -24,6 +24,10 @@ h1
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 header
 {
   background-color: black;
@@ -52,8 +56,7 @@ nav
 section
 {
   border: 3px dashed rgb(0, 0, 0);
-  margin: 100px;
-  height: 1100px;
+  margin: 100px;  
 }
 
 article
@@ -72,22 +75,22 @@ article>h2
   color: white;
   height: 30px;
 }
-.container
+.container-text--image-right
 {
   display: flex;
   flex-direction: row;
-  height: 400px;
   justify-content: space-between;
   font-size: 19px;
 }
 
-.container2
+.container-text--image-left
 {
   display: flex;
-  height: 500px;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
-.container2>article
+.container-text--image-left>article
 {
   font-size: 18px;
   margin: 0;
@@ -95,21 +98,23 @@ article>h2
 
 .space
 {
-  height: 345px;
   width: 500px;
 }
 
-.container3
+.container-image
 {
-  display: flex;
-  width: 98.2%;
-  height: 175px;
   margin: 15px;
 }
 
-.container3>img
+.moon
+{
+  height: 250px;
+}
+
+.container-image>img
 {
   position: relative;
+  width: 100%;
 }
 
 aside
@@ -121,6 +126,11 @@ aside
   justify-content: flex-end;
   text-align: justify;
   flex-wrap: wrap;
+}
+
+a:hover
+{
+  color: red;
 }
 
 footer
@@ -139,4 +149,156 @@ footer
   height: 50px;
   border-radius: 11px;
   margin: 15px;
+}
+
+footer>p
+{
+  color: white;
+  font-size: 12px;
+}
+
+
+
+@media screen and (max-width:699px)
+{
+
+  h1
+  {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    margin: 0;
+  }
+
+
+  nav
+{
+  margin: 0 auto;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+  section
+  {
+    border: 3px dashed rgb(0, 0, 0);
+    margin: 10px;
+  }
+
+.container-text--image-right
+{
+  font-size: 16px;
+  display: block;
+}
+
+article
+{
+  padding-left: 1px;
+  padding-right: 1px;
+  width: 96%;
+  height: 70%;
+  padding: 5px;
+  margin: 5px;
+  text-align: justify;
+  color: white;
+}
+
+article>h2
+{
+  margin-bottom: 0px;
+  height: 55px;
+}
+
+aside
+{
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.container-text--image-left
+{
+  display: block;
+}
+
+.new_planet
+{
+  display: block;
+}
+
+.new_planet>p
+{
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.moon
+{
+  height: auto;
+}
+
+footer
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>p
+{
+  margin:0;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.logo
+{
+  margin-bottom: 0;
+}
+}
+
+
+@media screen and (max-width:999px)
+{
+
+  section
+  {
+  margin: 15px;
+  }
+
+  article
+  {
+    padding: 0;
+  }
+
+  .blackhole
+  {
+  height: 200px;
+  width: 500px;
+  }
+
+  .space
+  {
+    height: 250px;
+  }
+
+  footer
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer>p
+  {
+    margin:0;
+    text-align: center;
+    font-size: 0.6em;
+  }
+
+  .logo
+  {
+    margin-bottom: 0;
+  }
+
 }

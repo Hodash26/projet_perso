@@ -58,9 +58,8 @@ h2
 label
 {
     color: white;
-    display: block; 
     margin-bottom: 20px;
-    text-align: center;
+    text-align: end;
 }
 
 article
@@ -72,12 +71,15 @@ article
     margin: 0 auto;
     margin-top: 40px;
     border: dashed 4px black;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 140px;
 }
 
-
+form
+{
+  display: flex;  
+  flex-direction: column;
+  width: 60%;
+}
 
 
 
@@ -97,4 +99,82 @@ footer
   height: 50px;
   border-radius: 11px;
   margin: 15px;
+}
+footer>p
+{
+  color: white;
+  font-size: 12px;
+}
+
+a:hover
+{
+  color: red;
+}
+
+
+@media screen and (max-width:699px)
+{
+
+  h1
+  {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    margin: 0;
+  }
+
+
+  nav
+{
+  margin: 0 auto;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+article
+{
+  height: auto;
+}
+
+h2
+{
+  font-size: 1.1em;
+}
+
+input
+{
+  width: 150px;
+  margin-top: 10px;
+}
+
+textarea
+{
+  width: 190px;
+}
+
+label
+{
+  width: auto;
+  text-align: start;
+}
+
+footer
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>p
+{
+  margin:0;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.logo
+{
+  margin-bottom: 0;
 }
