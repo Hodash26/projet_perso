@@ -234,6 +234,12 @@ aside
   font-size: 16px;
 }
 
+.block-space
+{
+  width: 280px;
+
+}
+
 .moon
 {
   height: auto;
